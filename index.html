@@ -1,117 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+  <title>Weather App</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 
-    <title>Weather App</title>
-  </head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <body>
+<body>
 
-    <!-- Background Watermark -->
-    <h1 class="bg-text">AKASH</h1>
+  <!-- Background Watermark -->
+  <h1 class="bg-text">AKASH</h1>
 
-    <section class="container">
+  <!-- Main Weather Container -->
+  <section class="container">
 
-      <!-- Search Section -->
-      <div class="weather_header">
-        <form class="weather_search">
+    <!-- Search Bar -->
+    <div class="weather_header">
 
-          <i class="fa-solid fa-magnifying-glass"></i>
+      <form class="weather_search">
 
-          <input
-            type="text"
-            class="city_name"
-            placeholder="Search your city..."
-          />
+        <i class="fa-solid fa-magnifying-glass"></i>
 
-        </form>
+        <input
+          type="text"
+          class="city_name"
+          placeholder="Search your city..."
+        />
+
+      </form>
+
+    </div>
+
+    <!-- Weather Main Section -->
+    <div class="weather_body">
+
+      <!-- City Name -->
+      <h1 class="weather_city">
+        Ludhiana, India
+      </h1>
+
+      <!-- Date Time -->
+      <p class="weather_date_time">
+        Wednesday, 15 May 2024, 09:30 AM
+      </p>
+
+      <!-- Forecast -->
+      <div class="forecast_wrapper">
+        <p class="weather_forecast">
+          Clear Sky
+        </p>
       </div>
 
-      <!-- Weather Main Data -->
-      <div class="weather_body">
+      <!-- Weather Icon -->
+      <div class="weather_icon">
+        <!-- JS se image aayegi -->
+      </div>
 
-        <h1 class="weather_city"></h1>
+      <!-- Temperature -->
+      <div class="temp_wrapper">
 
-        <p class="weather_date_time"></p>
+        <h2 class="weather_temperature">
+          28
+        </h2>
 
-        <div class="weather_data">
+        <span class="degree_symbol">
+          °C
+        </span>
 
-          <p class="weather_forecast"></p>
+      </div>
 
-          <div class="weather_icon"></div>
+      <!-- Min Max Temperature -->
+      <div class="weather_minmax">
 
+        <div class="min_box">
+          <p class="weather_min">
+            Min: 20°C
+          </p>
         </div>
 
-        <p class="weather_temperature"></p>
-
-        <div class="weather_minmax">
-          <p class="weather_min"></p>
-          <p class="weather_max"></p>
+        <div class="max_box">
+          <p class="weather_max">
+            Max: 33°C
+          </p>
         </div>
 
       </div>
 
-      <!-- Extra Weather Info -->
-      <section class="weather_info">
+    </div>
 
-        <div class="weather_card">
+    <!-- Weather Cards -->
+    <section class="weather_info">
+
+      <!-- Feels Like -->
+      <div class="weather_card">
+
+        <div class="card_icon">
           <i class="fa-solid fa-temperature-half"></i>
-
-          <div>
-            <p>Feels Like</p>
-            <p class="weather_feelsLike">15°</p>
-          </div>
         </div>
 
-        <div class="weather_card">
+        <div class="card_text">
+          <p>Feels Like</p>
+
+          <p class="weather_feelsLike">
+            29°C
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Humidity -->
+      <div class="weather_card">
+
+        <div class="card_icon">
           <i class="fa-solid fa-droplet"></i>
-
-          <div>
-            <p>Humidity</p>
-            <p class="weather_humidity">15%</p>
-          </div>
         </div>
 
-        <div class="weather_card">
+        <div class="card_text">
+          <p>Humidity</p>
+
+          <p class="weather_humidity">
+            45%
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Wind -->
+      <div class="weather_card">
+
+        <div class="card_icon">
           <i class="fa-solid fa-wind"></i>
-
-          <div>
-            <p>Wind</p>
-            <p class="weather_wind">15 m/s</p>
-          </div>
         </div>
 
-        <div class="weather_card">
+        <div class="card_text">
+          <p>Wind</p>
+
+          <p class="weather_wind">
+            12 m/s
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Pressure -->
+      <div class="weather_card">
+
+        <div class="card_icon">
           <i class="fa-solid fa-gauge-high"></i>
-
-          <div>
-            <p>Pressure</p>
-            <p class="weather_pressure">1012 hPa</p>
-          </div>
         </div>
 
-      </section>
+        <div class="card_text">
+          <p>Pressure</p>
 
-      <!-- Footer -->
-      <div class="footer_text">
-        <p>Made with ❤️ by Akash</p>
+          <p class="weather_pressure">
+            1012 hPa
+          </p>
+        </div>
+
       </div>
 
     </section>
 
-    <!-- JS -->
-    <script src="./main.js"></script>
+    <!-- Footer -->
+    <div class="footer_text">
+      <p>Made with ❤️ by Akash</p>
+    </div>
 
-  </body>
+  </section>
+
+  <!-- JS -->
+  <script src="./main.js"></script>
+
+</body>
 </html>
